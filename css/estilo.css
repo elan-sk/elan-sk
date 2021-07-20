@@ -425,26 +425,30 @@ Desktop first que empiese desde el MQ más grande */
 	}
 }
 @media screen and (max-width: 767px) {
+	h1,h2,h3,h4,h5,h6 {
+		margin: .7em .5em;
+	}
+	
 	h1 {
-		font-size:1em;
+		font-size:1.9em;
 	}
 	h2 {
-		font-size:1em;
+		font-size:1.6em;
 	}
 	h3 {
-		font-size:1em;
+		font-size:1.5em;
 	}
 	h4 {
-		font-size:1em;
+		font-size:1.4em;
 	}
 	h5 {
-		font-size:1em;
+		font-size:1.3em;
 	}
 	h6 {
-		font-size:1em;
+		font-size:1.2em;
 	}
 	a {
-		font-size:1.2em;
+		font-size:1em;
 	}
 	p {
 		font-size:1.2em !important;
@@ -495,7 +499,7 @@ Desktop first que empiese desde el MQ más grande */
 		text-align: center;
 	}
 	.hero{
-		height: 13em;
+		height: 15em;
 		margin-top: 0;
 		
 		align-items: center;
@@ -576,6 +580,7 @@ Desktop first que empiese desde el MQ más grande */
 		display: block;
 		text-align: center;
 		padding: 0;
+		margin-top: 1em;
 	}
 	footer{
 		display: block;
@@ -586,12 +591,16 @@ Desktop first que empiese desde el MQ más grande */
 	footer p{
 		margin-top:0;
 	}
+	.form-email h3, h4{
+		margin: 0;
+		margin-right: .3em;
+	}
 
 }
 @media screen and (max-width: 480px) {
 
 	.hero{
-		height: 8.6em;
+		height: 15em;
 	}
 
 	.hero a{
@@ -659,7 +668,7 @@ Desktop first que empiese desde el MQ más grande */
 @media screen and (max-width: 320px) {
 
 	.hero{
-		height: 6.4em;
+		height: 15em;
 	}
 	.hero a{
 		margin-top: 0;
