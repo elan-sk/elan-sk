@@ -85,6 +85,7 @@ figure img{
 	-webkit-text-stroke: 1.5px black;
     font-family: Impact,'Fjalla One', Times, sans-serif;
     font-size: 2em;
+
 }
 
 .header {
@@ -416,6 +417,9 @@ Desktop first que empiese desde el MQ más grande */
 		font-size: 1em;
 		z-index: 2;
 		margin: 0;
+	}
+	.texto-logo{
+		font-weight: bold;
 	}
 }
 @media screen and (max-width: 767px) {
