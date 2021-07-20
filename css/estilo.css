@@ -83,7 +83,7 @@ figure img{
        
 	-webkit-text-fill-color:white;        
 	-webkit-text-stroke: 1.5px black;
-    font-family: Impact;
+    font-family: Impact,'Fjalla One', Times, sans-serif;
     font-size: 2em;
 }
 
