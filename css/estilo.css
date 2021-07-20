@@ -546,6 +546,8 @@ Desktop first que empiese desde el MQ más grande */
 		padding: 0;
 	}
 
+
+
 	footer{
 		display: block;
 		text-align: center;
@@ -618,7 +620,16 @@ Desktop first que empiese desde el MQ más grande */
 		display: block;
 		margin: 0;
 		font-size: 10px;
+		
 	}
+	.social-link {
+		width: 40px;
+		height: 40px;
+		background-size: 40px 40px;
+		font-size: 1em;
+		margin: 0 10px;
+	}
+
 	.form-email button{
 		margin: 2em auto;
 		font-size: 1em;
@@ -627,7 +638,7 @@ Desktop first que empiese desde el MQ más grande */
 		width: 30px;
 		height: 30px;
 		background-size: contain;
-		background:#404040;
+	
 	}
 
 	footer img{
@@ -666,4 +677,5 @@ Desktop first que empiese desde el MQ más grande */
 	.favoritos-list{
 		margin: .2em;
 	}
+
 }
