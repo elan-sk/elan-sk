@@ -424,7 +424,10 @@ Desktop first que empiese desde el MQ más grande */
 		font-size: 1.7em;
 	}
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 769px) {
+	.hero img{
+		visibility: hidden;
+	}
 	h1,h2,h3,h4,h5,h6 {
 		margin: .7em .5em;
 	}
@@ -504,9 +507,6 @@ Desktop first que empiese desde el MQ más grande */
 		display: flex;
 		align-items: center;
 		justify-content: center;
-	}
-	.hero img{
-		visibility: hidden;
 	}
 	.hero h1{
 		width: 100vw;
