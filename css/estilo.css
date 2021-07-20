@@ -420,7 +420,7 @@ Desktop first que empiese desde el MQ más grande */
 	}
 	.texto-logo{
 		-webkit-text-stroke: 1px black;
-		font-weight:800;
+		font-weight:600;
 		font-size: 1.6em;
 	}
 }
