@@ -600,14 +600,13 @@ Desktop first que empiese desde el MQ más grande */
 @media screen and (max-width: 480px) {
 
 	.hero{
-		height: 15em;
+		height: 14.5em;
 	}
 
 	.hero a{
 		margin-top: 1px;
 	}
-	
-	
+
 	.header{
 		padding: .1em 0 .3em;
 	}
