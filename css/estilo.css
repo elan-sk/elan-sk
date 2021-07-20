@@ -212,9 +212,8 @@ h2 {
 }
 .project-title {
 	font-size:1.6em;
-	margin-top: .1em;
 	margin-left: 0;
-
+	margin-top: .1em;
 }
 .project-details {
 	font-size: 1.1em;
@@ -473,7 +472,7 @@ Desktop first que empiese desde el MQ más grande */
 		text-align: center;
 	}
 	.hero{
-		height: 7.1em;
+		height: 8em;
 		margin-top: 0;
 		
 		align-items: center;
@@ -485,6 +484,7 @@ Desktop first que empiese desde el MQ más grande */
 	.hero a{
 		font-size: 1em;
 		margin-top: .5em;
+		font-size: 1em;
 	}
 	
 	.bienvenida{
@@ -504,7 +504,6 @@ Desktop first que empiese desde el MQ más grande */
 	
 	.header figure{
 		display:block;
-		
 		height: 100%;
 		text-align: center;
 		line-height: 60px;
@@ -518,7 +517,8 @@ Desktop first que empiese desde el MQ más grande */
 	/* configuración del Portafolio */
 	.project {
 		display: block;
-		font-size: 10px;
+		font-size: 1em;
+		margin: 1px, 5px;
 	}
 	.project-textContainer{
 		width: auto;
@@ -539,19 +539,18 @@ Desktop first que empiese desde el MQ más grande */
 	}
 	.project-title {
 		font-size: 2.3em;
+		margin: 0;
 		margin-top: .1em;
+		margin-right: .1em;
 	}
 
 	
 	.favorito{
 		max-width: 100%;
 		flex-shrink: initial;
-		font-size: 10px;
+		font-size: 1em;
 	}
-	.favoritos-list{
-		margin: 1em;
-	}
-
+	
 	.contact{
 		justify-content: center;
 		align-items: center;
