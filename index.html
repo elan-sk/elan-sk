@@ -1,175 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portafolio ELAN-SK</title>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/png" href="images/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/estilo.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <i class="icon-menu burger-button" id="burger-menu"></i>
 
-<!-- saved from url=(0107)https://static.platzi.com/media/tmp/class-files/git/freddier.github.io/freddier.github.io-master/index.html -->
-<html class="no-touch"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><style type="text/css">/*
- * contextMenu.js v 1.4.0
- * Author: Sudhanshu Yadav
- * s-yadav.github.com
- * Copyright (c) 2013 Sudhanshu Yadav.
- * Dual licensed under the MIT and GPL licenses
-**/
 
-.iw-contextMenu {
-    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.10) !important;
-    border: 1px solid #c8c7cc !important;
-    border-radius: 11px !important;
-    display: none;
-    z-index: 1000000132;
-    max-width: 300px !important;
-    width: auto !important;
-}
+  <!-- ENCABEZADO =======================================================================-->
+  <header class="header">
+    <div class="container">
+      <figure class="texto-logo">
+        <img src="images/logo.png" height="50px" alt="Logo de http://elan-sk.com"/>
+        &nbspELAN - SK
+      </figure>
+      <nav class="menu">
+        <ol>
+          <li>
+            <a href="#inicio">Inicio</a>
+          </li>
+          <li>
+            <a href="#acerca-de-mi">Acerca de mi</a>
+          </li>
+          <li>
+            <a href="#galeria-trabajo">Galería de Trabajo</a>
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </header>
+   <!-- FIN ENCABEZADO ======================================================== -->
 
-.dark-mode .iw-contextMenu,
-.TnITTtw-dark-mode.iw-contextMenu,
-.TnITTtw-dark-mode .iw-contextMenu {
-    border-color: #747473 !important;
-}
 
-.iw-cm-menu {
-    background: #fff !important;
-    color: #000 !important;
-    margin: 0px !important;
-    padding: 0px !important;
-    overflow: visible !important;
-}
+   <!-- HERO =============================================================================-->
+  <section id="inicio" class="hero">
+    <div class="container">
+      <div class="bienvenida">
+        <h1> Hola! Soy <strong> Elan Fco. </strong><br/>Desarrollador  <strong>Web</strong> <br/>con pasión por la <strong>programación.</strong>
+        </h1>
+        <a class="boton" href="#acerca-de-mi">Acerca de mi</a>
+        <a class="boton" href="#galeria-trabajo">Galería de Trabajo</a>
+      </div>
+      <img src="images/hero.png" width="600x" height="400px"alt="Imagen de hero">
+    </div>
+  </section>
+  <!-- FIN HERO ===========================================================================-->
+    
 
-.dark-mode .iw-cm-menu,
-.TnITTtw-dark-mode.iw-cm-menu,
-.TnITTtw-dark-mode .iw-cm-menu {
-    background: #525251 !important;
-    color: #FFF !important;
-}
+  <!-- CONTENIDO ===========================================================================-->
+  <section id="acerca-de-mi" class="container">
+     <!--ACERCA DE MI ===============================================================-->
+    <h2>Acerca de mi</h2>
+    <h3>Actividades Favoritas</h3>
+    <section id="actividades-favoritas" data-class="favoritos-list">
+      <div class="container">
+        <!--favorito1================================================-->
+        <article class="favorito">
+          <figure class="favorito-imageContainer">
+            <img class="favorito-image" src="images/acercademi/futbol.jpg" width="300" alt="" />
+          </figure>
+          <div class="favorito-detail">
+            <h3 class="favorito-title">Futbol</h3>
+            <p class="favorito-description">Disfruto de practica este deporte, juego de defensa central o arquero.</p>
+          </div>
+        </article>
 
-.iw-curMenu {
-}
+        <!--favorito2================================================-->
+        <article class="favorito">
+          <figure class="favorito-imageContainer">
+            <img class="favorito-image" src="images/acercademi/ciclismo.jpg" width="300" alt="" />
+          </figure>
+          <div class="favorito-detail">
+            <h3 class="favorito-title">Ciclismo</h3>
+            <p class="favorito-description">Me gusta recorrer la ciudad en bici y ver el atardecer en el malecón.</p>
+          </div>
+        </article>
 
-.iw-cm-menu li {
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, Ubuntu, sans-serif !important;
-    list-style: none !important;
-    padding: 10px !important;
-    padding-right: 20px !important;
-    border-bottom: 1px solid #c8c7cc !important;
-    font-weight: 400 !important;
-    cursor: pointer !important;
-    position: relative !important;
-    font-size: 14px !important;
-    margin: 0 !important;
-    line-height: inherit !important;
-    border-radius: 0 !important;
-    display: block !important;
-}
+        <!--favorito4================================================-->
+        <article class="favorito">
+          <figure class="favorito-imageContainer">
+            <img class="favorito-image" src="images/acercademi/viajar.jpg" width="300" alt="" />
+          </figure>
+          <div class="favorito-detail">
+            <h3 class="favorito-title">Viajar</h3>
+            <p class="favorito-description">Dispuesto a la aventura... a conocer lugares increibles </p>
+          </div>
+        </article>
 
-.dark-mode .iw-cm-menu li, .TnITTtw-dark-mode .iw-cm-menu li {
-    border-bottom-color: #747473 !important;
-}
+        <!--favorito3================================================-->
+        <article class="favorito">
+          <figure class="favorito-imageContainer">
+            <img class="favorito-image" src="images/acercademi/musica.jpeg" width="300" alt="" />
+          </figure>
+          <div class="favorito-detail">
+            <h3 class="favorito-title">Música</h3>
+            <p class="favorito-description">Soy un aficionado, actualmente estoy en proceso de aprender a tocar el Ukelele</p>
+          </div>
+        </article>
+        
+      </div>
+    </section>
 
-.iw-cm-menu li:first-child {
-    border-top-left-radius: 11px !important;
-    border-top-right-radius: 11px !important;
-}
+    <!--Galeria de trabajos ===================================-->
+  
+    <div id="galeria-trabajo" class="container">
+      <h2>Galería de trabajo</h2>
+      <h3>Proyectos destacados</h3>
+      
+      <!--Proyecto1 =====================================-->
+      <article class="project">
+        <div class="project-textContainer">
+          <h3 class="project-title">Pagina Web Personal</h3>
+          <h6 class="project-course">Selección Río Software</h6>
+          <p><small><strong>Presentación:</strong> <a href="https://elan-sk.github.io/" >Ver video</a> </small><br/><small><strong>Repositorio:</strong> <a href="https://github.com/elan-sk/RSreto1b" target="_blank">https://github.com/elan-sk/RSreto1b</a> </small><p>
+            <p class="project-details"> En el marco del proceso de selección de la academia Río Software, se realizó una pagina Web sencilla, con el fin de reconocer las habilidades en HTML y CSS. La página que se creó es reponsiva es decir que se ajusta a la mayoria de pantallas, también se usa algo algo de JAVASCRIPT para algunos elementos como el menú de amburgesa. </p>
+          </div>
+          <figure class="project-imageContainer" >
+            <img src="images/Proyectos/PaginaPersonal.png" alt="Pagina Personal">
+          </figure>
+        </article>
 
-.iw-cm-menu li:last-child {
-    border-bottom-left-radius: 11px !important;
-    border-bottom-right-radius: 11px !important;
-    border-bottom: none !important;
-}
+      <!--Proyecto2 =====================================-->
+      <article class="project">
+        <figure class="project-imageContainer imagen-izquierda" >
+          <img src="images/Proyectos/botSignosVitales.png" alt="Bot de telegram">
+        </figure>
+        <div class="project-textContainer">
+          <h3 class="project-title">BOT REGISTRO SIGNOS VITALES</h3>
+          <h6 class="project-course">UAM</h6>
+          <p><small><strong>Presentación:</strong> <a href="https://www.youtube.com/watch?v=yRGf2ueneRo" target="_blank">Ver video</a> </small><br/><small><strong>Repositorio:</strong> <a href="https://github.com/Castel2/BotSignosVitales" target="_blank">https://github.com/Castel2/BotSignosVitales</a> </small><p>
+            <p class="project-details"> En el marco de la Especialización de Ingeniería, se realizó en grupo un Bot de telegrama usando Python. Esta aplicación es capaz de registrar los signos vitales de pacientes, con el fin de que se pueda hacer seguimiento a dichos signos por parte de personal médico. </p>
+          </div>
+        </article>
 
-.iw-mOverlay {
-    position: absolute !important;
-    width: 100% !important;
-    height: 100% !important;
-    top: 0px !important;
-    left: 0px !important;
-    background: #FFF !important;
-    opacity: .5 !important;
-}
+      <!--Proyecto3 =====================================-->
+      <article class="project">
+        <div class="project-textContainer">
+          <h3 class="project-title">RUTA DEL SABER</h3>
+          <h6 class="project-course">Prosperidad Social</h6>
+          <p><small><strong>Presentación:</strong> <a href="https://www.dropbox.com/s/kyqb7cla71z10jp/Presentaci%C3%B3n%20RUTA%20DEL%20SABER.pdf?dl=0" target="_blank">Ver instrucciones</a> </small><br/><small><strong>Instalador:</strong> <a href="https://dpsco-my.sharepoint.com/personal/elan_perea_prosperidadsocial_gov_co/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Felan%5Fperea%5Fprosperidadsocial%5Fgov%5Fco%2FDocuments%2FCAPACITACIONES%2FRUTA%20DEL%20SABER%2Ezip&parent=%2Fpersonal%2Felan%5Fperea%5Fprosperidadsocial%5Fgov%5Fco%2FDocuments%2FCAPACITACIONES&originalPath=aHR0cHM6Ly9kcHNjby1teS5zaGFyZXBvaW50LmNvbS86dTovZy9wZXJzb25hbC9lbGFuX3BlcmVhX3Byb3NwZXJpZGFkc29jaWFsX2dvdl9jby9FY3lhVS1CeldNWkVwX1V0d2VRRkttNEI0cUptWU9Rb1IyMlU4S2EycUhVQ3pBP3J0aW1lPVNmVHlhT3RLMlVn" target="_blank">Descargar</a> </small><p>
+            <p class="project-details"> Como empleado de Prosperidad Social, se codificó un juego de preguntas y respuesta usando Visual Basic, esto con el fin de enseñar y reforzar los conocimientos de los equipos de trabajo de una forma dinámica y entretenida. </p>
+          </div>
+          <figure class="project-imageContainer" >
+            <img src="images/Proyectos/RutaDelSaber.png" alt="Ruta del saber">
+          </figure>
+        </article>
 
-.iw-contextMenu li.iw-mDisable {
-    opacity: 0.3 !important;
-    cursor: default !important;
-}
+     <!--Proyecto4 =====================================-->
+     <article class="project">
+      <figure class="project-imageContainer imagen-izquierda" >
+        <img src="images/Proyectos/EQUIPRES.png" alt="EQUIPRES">
+      </figure>
+      <div class="project-textContainer">
+        <h3 class="project-title">EQUIPRES</h3>
+        <h6 class="project-course">UCC</h6>
+        <p><small><strong>Presentación:</strong> <a href="https://www.youtube.com/watch?v=Yo6BoXxQrGo" target="_blank">Ver video</a> </small><br/><small><strong>Instalador:</strong> <a href="https://dpsco-my.sharepoint.com/personal/elan_perea_prosperidadsocial_gov_co/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Felan%5Fperea%5Fprosperidadsocial%5Fgov%5Fco%2FDocuments%2FxxPERSONAL%2FEQUIPRESforTecNM%2Ezip&parent=%2Fpersonal%2Felan%5Fperea%5Fprosperidadsocial%5Fgov%5Fco%2FDocuments%2FxxPERSONAL&originalPath=aHR0cHM6Ly9kcHNjby1teS5zaGFyZXBvaW50LmNvbS86dTovZy9wZXJzb25hbC9lbGFuX3BlcmVhX3Byb3NwZXJpZGFkc29jaWFsX2dvdl9jby9FWTZoMUlXSHhCUk9xTXgtVy1ZQU9TWUJQT01hek4wcEFkc0Q4bTFOSDJzX1JBP3J0aW1lPVRvcVhmTzVLMlVn" target="_blank">Descargar</a> </small><p>
+          <p class="project-details"> Como producto final de las prácticas universitarias, se desarrolló una aplicación con Visual Basic para la administración de los préstamos de los equipos de cómputo de la sala de sistemas de universidad. </p>
+        </div>
+      </article>
 
-.iw-mSelected {
-    background-color: #F6F6F6 !important;
-}
 
-.dark-mode .iw-mSelected, .TnITTtw-dark-mode .iw-mSelected {
-    background-color: #676766 !important;
-}
+    </div>
+    <!-- FIN Galeria de trabajos =======================-->
+  </section>
+  <!-- FIN CONTENIDO ===========================================================================-->
+  
 
-.iw-cm-arrow-right {
-    width: 0 !important;
-    height: 0 !important;
-    border-top: 5px solid transparent !important;
-    border-bottom: 5px solid transparent !important;
-    border-left: 5px solid #000 !important;
-    position: absolute !important;
-    right: 5px !important;
-    top: 50% !important;
-    margin-top: -5px !important;
-}
+    
+  <!-- CONTACTO ===========================================================================-->
+  <section id="contacto" class="contact">
+    <div class="container">
+      <form action="/suscription" class="form-email">
+        <h3>¿Creamos algo juntos?</h3>
+        <h4>elan-sk@hotmail.com</h4>
+  
+      </form>
+      <div class="social">
+        <a href="https://www.facebook.com/the.elan.sk/" class="social-link facebook" target="_blank"></a>
+        <a href="https://github.com/elan-sk" class="social-link github" target="_blank"></a>
+        <a href="https://www.youtube.com/channel/UC4pJAnQV9UJYQ_-aYgZt17w" class="social-link youtube" target="_blank"></a>
+        <a href="https://www.linkedin.com/in/elan-francisco-perea-asprilla-920271211/" class="social-link linkedin" target="_blank"></a>
+      </div>
+    </div>
+  </section>
+  <!-- FIN CONTACTOS ===========================================================================-->
+    
+ <!-- FIN FOOTER ===========================================================================-->
+  <footer>
+    <div class="container">
+      <div class="">
+      </div>
+      <div class="">
+        <p>
+          <img src="images/LOGOTIPO.png" alt="Elan-sk Soft" width="200"><br>Desarrollado en 2021
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- FIN FOOTER ===========================================================================-->
+  
 
-.dark-mode .iw-cm-arrow-right, .TnITTtw-dark-mode .iw-cm-arrow-right {
-    border-left-color: #FFF !important;
-}
+ <!-- FIN FIN JAVASCRIP====================================================================-->
+  <script type="text/javascript">
+    console.log(window.matchMedia('screen and (max-width: 767px)'));
 
-.iw-mSelected > .iw-cm-arrow-right {
-}
+    const menu = document.querySelector('.menu');
+    const burgerBottom = document.querySelector('#burger-menu');
+    const ipad = window.matchMedia('screen and (max-width: 767px)');
 
-/*context menu css end */</style><style type="text/css">@-webkit-keyframes load4 {
-    0%,
-    100% {
-        box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+    ipad.addListener(validation);
+
+    function validation(event){
+      if (event.matches){
+        // menu.classList.remove('is-active')
+        burgerBottom.addEventListener('click', hideShow);
+      }else {
+        burgerBottom.removeEventListener('click', hideShow);
+      }
+
     }
-    12.5% {
-        box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
-    }
-    25% {
-        box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
-    }
-    37.5% {
-        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
-    }
-    50% {
-        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
-    }
-    62.5% {
-        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
-    }
-    75% {
-        box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
-    }
-    87.5% {
-        box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
-    }
-}
+    validation(ipad);
 
-@keyframes load4 {
-    0%,
-    100% {
-        box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+
+    function hideShow(){
+      if (menu.classList.contains('is-active')) {
+          menu.classList.remove('is-active');
+      }else {
+        menu.classList.add('is-active');
+      }
     }
-    12.5% {
-        box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
-    }
-    25% {
-        box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
-    }
-    37.5% {
-        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
-    }
-    50% {
-        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
-    }
-    62.5% {
-        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
-    }
-    75% {
-        box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
-    }
-    87.5% {
-        box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
-    }
-}</style><style type="text/css">/* This is not a zero-length file! */</style></head><body><h1>Este es un sitio web con Github Pages</h1>
-<p>Y fue creado con amor para el Curso de Git y Github de Platzi</p>
-<p><img src="https://i.imgur.com/PfA0M2o.gif"></p>
-<script async="" src="./index_files/api.js.descargar"></script><script type="text/javascript">(function(){window['__CF$cv$params']={r:'656ad4f06a88014e',m:'27ee8e6a85f3d7c3ec28864fa4e943638dd138fc-1622240023-1800-AWkQdKQPlvEoxNbYaqvklqzTu/cy74CZ7rjG1jq+QVGhDrGhZzJzqBi8V2skqZsFKz5nkaM5KYgB2qs0y5u5XFU1Wzb/tTOlCsWwVDqNwMkMqogQvUat+h4SZkPnDYP+Wc3NW5UxdVXctJ62tfnaIFfq96Q/lnPRY148+1c94fgdGhtXaBYyN8EEnD71Yd9+pQv8A6LViBV7D4sLCnymMsBHjt2+XGXFFvfHvcpWynR7',s:[0x64c673123a,0xa1327cdc23],}})();</script></body></html>
+  </script>
+   <!-- FIN JAVASCRIPT================================================================-->
+  
+</body>
+</html>
