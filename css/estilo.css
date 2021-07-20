@@ -63,6 +63,15 @@ figure {
 	margin: 0;
 }
 
+figure img{
+	margin: 0;
+}
+
+.logo{
+	border: 1px solid rgba(0, 0, 0, 0.641);
+	border-radius: 50%;
+}
+
 .texto-logo{
     height: inherit;
     width: inherit;
@@ -75,7 +84,7 @@ figure {
 	-webkit-text-fill-color:white;        
 	-webkit-text-stroke: 1.5px black;
     font-family: Impact;
-    font-size: 1.4em;
+    font-size: 2em;
 }
 
 .header {
