@@ -70,6 +70,7 @@ figure img{
 .logo{
 	border: 1px solid rgba(0, 0, 0, 0.641);
 	border-radius: 50%;
+	margin-right: .15em;
 }
 
 .texto-logo{
@@ -421,13 +422,13 @@ Desktop first que empiese desde el MQ más grande */
 	.texto-logo{
 		-webkit-text-stroke: 1px black;
 		font-weight:600;
-		font-size: 1.6em;
+		font-size: 1.7em;
 	}
 }
 @media screen and (max-width: 767px) {
 	/* configuración del header */
 	.burger-button {
-	display: block;
+		display: block;
 	}
 	/* .header ol, li {
 		height: 50px;
@@ -445,22 +446,22 @@ Desktop first que empiese desde el MQ más grande */
 		align-items: center;
 		transition: .3s;
 	}
-
+	
 	.menu.is-active {
 		left: 0;
 	}
-
+	
 	.header ol {
 		height: auto;
 		font-size: 1em;
 		display: inline-block;
 	}
-
+	
 	.header li {
 		text-align: center;
 		display: block;
 	}
-
+	
 	.header a {
 		margin: .8em 0;
 		height: 40px;
@@ -470,8 +471,8 @@ Desktop first que empiese desde el MQ más grande */
 		text-align: center;
 	}
 	.hero{
-	height: 7.1em;
-	margin-top: 0;
+		height: 7.1em;
+		margin-top: 0;
 	}
 	h1{
 		font-size: 1.5em;
@@ -480,32 +481,35 @@ Desktop first que empiese desde el MQ más grande */
 		font-size: .5em;
 		margin-top: .5em;
 	}
-
+	
 	.bienvenida{
 		display:inline-block;
 	}
 	.header{
 		display: block;
-    position: sticky;
-    top:0;
-    left: 0;
-    right: 0;
-    z-index: 3;
+		position: sticky;
+		top:0;
+		left: 0;
+		right: 0;
+		z-index: 3;
 		height: 60px;
 		padding:auto;
-    margin: 0;
+		margin: 0;
 	}
-
+	
 	.header figure{
 		display:block;
-
-    height: 100%;
-    text-align: center;
-    line-height: 60px;
+		
+		height: 100%;
+		text-align: center;
+		line-height: 60px;
 	}
-  .header img{
-    vertical-align: middle;
-  }
+	.header img{
+		vertical-align: middle;
+	}
+	.logo{
+		margin-right: 1px;
+	}
 	/* configuración del Portafolio */
 	.project {
 		display: block;
