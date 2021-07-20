@@ -419,8 +419,8 @@ Desktop first que empiese desde el MQ más grande */
 		margin: 0;
 	}
 	.texto-logo{
-		font-weight:900;
-		font-size: 1.7em;
+		font-weight:800;
+		font-size: 1.5em;
 	}
 }
 @media screen and (max-width: 767px) {
