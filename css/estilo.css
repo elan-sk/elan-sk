@@ -608,7 +608,7 @@ Desktop first que empiese desde el MQ más grande */
 @media screen and (max-width: 480px) {
 
 	.hero{
-		height: 14em;
+		height: 13em;
 	}
 
 	.hero a{
