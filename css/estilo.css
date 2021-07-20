@@ -444,10 +444,10 @@ Desktop first que empiese desde el MQ más grande */
 		font-size:1em;
 	}
 	a {
-		font-size:1em;
+		font-size:1.2em;
 	}
 	p {
-		font-size:1.5em !important;
+		font-size:1.2em !important;
 	}
 		
 	/* configuración del header */
