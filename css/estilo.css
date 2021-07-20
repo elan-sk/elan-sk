@@ -426,6 +426,8 @@ Desktop first que empiese desde el MQ más grande */
 	}
 }
 @media screen and (max-width: 767px) {
+
+		
 	/* configuración del header */
 	.burger-button {
 		display: block;
@@ -473,12 +475,15 @@ Desktop first que empiese desde el MQ más grande */
 	.hero{
 		height: 7.1em;
 		margin-top: 0;
+		
+		align-items: center;
+		justify-content: center;
 	}
-	h1{
-		font-size: 1.5em;
-	}
+
+
+
 	.hero a{
-		font-size: .5em;
+		font-size: 1em;
 		margin-top: .5em;
 	}
 	
@@ -579,6 +584,15 @@ Desktop first que empiese desde el MQ más grande */
 
 }
 @media screen and (max-width: 480px) {
+	/* h1{
+		font-size: 1.5em;
+		padding: .5em;
+	}
+	h2 {
+		font-size: 1.1em;
+		margin-bottom: 1em;
+	}
+	*/
 	.hero{
 		height: 8.6em;
 	}
@@ -587,10 +601,7 @@ Desktop first que empiese desde el MQ más grande */
 		margin-top: 1px;
 	}
 	
-	h1{
-		font-size: 1.5em;
-		padding: .5em;
-	}
+	
 	.header{
 		padding: .1em 0 .3em;
 	}
@@ -605,10 +616,7 @@ Desktop first que empiese desde el MQ más grande */
 		display: block;
 		font-size: 8px;
 	}
-	h2 {
-		font-size: 1.1em;
-		margin-bottom: 1em;
-	}
+
 	.portafolio {
 		padding: .5em;
 		padding-top: 3px;
@@ -629,7 +637,6 @@ Desktop first que empiese desde el MQ más grande */
 		border-top-left-radius: 0;
 		border-top-right-radius: 0;
 	}
-
 
 	.contact{
 		height: auto;
@@ -665,6 +672,18 @@ Desktop first que empiese desde el MQ más grande */
 	}
 }
 @media screen and (max-width: 320px) {
+	/*
+	h1 {
+		font-size: 1.2em;
+		padding: .1em;
+		margin: .2em;
+	}
+
+	h2 {
+		font-size: 1em;
+		margin-bottom: 1em;
+	}
+	*/
 
 	.hero{
 		height: 6.4em;
@@ -675,19 +694,12 @@ Desktop first que empiese desde el MQ más grande */
 		margin-top: 0;
 	}
 
-	h1 {
-		font-size: 1.2em;
-		padding: .1em;
-		margin: .2em;
-	}
+	
 	.project {
 		display: block;
 		font-size: 7px;
 	}
-	h2 {
-		font-size: 1em;
-		margin-bottom: 1em;
-	}
+	
 	.portafolio {
 		padding: .2em;
 		padding-top: 2px;
