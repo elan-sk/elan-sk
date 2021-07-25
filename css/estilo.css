@@ -30,6 +30,9 @@
 	content: "\e900";
 }
 
+html{
+	scroll-behavior: smooth;
+}
 
 body {
 	font-family: 'Source Sans Pro',sans-serif;
@@ -57,7 +60,7 @@ body {
 	list-style: none;
 	height: inherit;
 	display: flex;
-	flex-wrap: wrap;l
+	flex-wrap: wrap;
 }
 figure {
 	margin: 0;
@@ -494,11 +497,11 @@ Desktop first que empiese desde el MQ más grande */
 	}
 	
 	.header a {
-		margin: .8em 0;
+		margin: .3em 0;
 		height: 40px;
 		text-decoration: underline;
 		margin-bottom: .5em;
-		font-size: 2em;
+		font-size: .8em;
 		text-align: center;
 	}
 	.hero{
@@ -619,7 +622,7 @@ Desktop first que empiese desde el MQ más grande */
 		padding: .1em 0 .3em;
 	}
 	.header a{
-		margin: .2em 0;
+		margin: 2em 0;
 	}
 	.header figure{
 		margin-bottom: 0;
