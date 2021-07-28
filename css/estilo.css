@@ -473,7 +473,7 @@ Desktop first que empiese desde el MQ más grande */
 		z-index: 3;
 		background: #f2a444c5;
 		top: 0;
-		left: -100vh;
+		left: -100vw;
 		width: 100vw;
 		height: 100vh !important;
 		justify-content: center;
@@ -548,7 +548,6 @@ Desktop first que empiese desde el MQ más grande */
 	}
 	/* configuración del Portafolio */
 	.project {
-		display: block;
 		margin: 1px, 5px;
 	}
 	.project-textContainer{
@@ -556,6 +555,13 @@ Desktop first que empiese desde el MQ más grande */
 		padding: 0;
 	}
 
+	.project-textContainer{
+		order: -1;
+	}
+
+	.project img{
+		order: 1;
+	}
 	.project-textContainer{
 		
 		margin-left: .5em;
@@ -574,7 +580,7 @@ Desktop first que empiese desde el MQ más grande */
 		margin-right: .1em;
 	}	
 	.favorito{
-		max-width: 100%;
+		min-width: 94vw;
 		flex-shrink: initial;
 	}
 	.contact{
@@ -626,9 +632,6 @@ Desktop first que empiese desde el MQ más grande */
 	}
 	.header figure{
 		margin-bottom: 0;
-	}
-	.project {
-		display: block;
 	}
 
 	.portafolio {
