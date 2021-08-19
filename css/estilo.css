@@ -71,7 +71,7 @@ figure img{
 }
 
 .logo{
-	border: 1px solid rgba(0, 0, 0, 0.641);
+	border: 0px solid rgba(0, 0, 0, 0.641);
 	border-radius: 50%;
 	margin-right: .15em;
 }
@@ -363,7 +363,7 @@ footer a {
 .flex-video{
 	width: 100%;
 	padding-top : calc((315*100/560)*1%);
-	background: blank;
+	background:black;
 	margin-bottom: 5em;
 	position: relative;
 }
