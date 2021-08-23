@@ -232,15 +232,15 @@ h2 {
 }
 	
 	
-/* favoritos */
+/* estudios */
 
-.favoritos-list {
+.estudios-list {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
 }
-.favorito {
+.estudio {
 	border: 1px solid gray;
 	margin: 1%;
 	max-width: 47%;
@@ -252,7 +252,7 @@ h2 {
 	display: inline-block;
 	
 }
-.favorito-detail {
+.estudio-detail {
 	margin:2em;
 	margin-top: -1em;
 	background:white;
@@ -264,16 +264,16 @@ h2 {
 	border-radius: 10px;
 
 }
-.favorito-description {
+.estudio-description {
 	margin-bottom: .5em;
 }
-.favorito img {
+.estudio img {
 	width: 100%;
 	height: 250px;
 	object-fit: cover;
 }
 
-.favorito-title {
+.estudio-title {
 	margin: 5px;
 }
 /* section contacto */
@@ -576,7 +576,7 @@ Desktop first que empiese desde el MQ más grande */
 		margin-top: .1em;
 		margin-right: .1em;
 	}	
-	.favorito{
+	.estudio{
 		min-width: 94vw;
 		flex-shrink: initial;
 	}
@@ -636,13 +636,13 @@ Desktop first que empiese desde el MQ más grande */
 		padding-top: 3px;
 	}
 
-	.favoritos-list{
+	.estudios-list{
 		margin: .5em;
 	}
-	.favoritos-list{
+	.estudios-list{
 		margin: .5em;
 	}
-	.favorito-detail {
+	.estudio-detail {
 		margin:0;
 		top: -.2em;
 		height: 10em;
@@ -690,7 +690,7 @@ Desktop first que empiese desde el MQ más grande */
 		padding: .2em;
 		padding-top: 2px;
 	}
-	.favoritos-list{
+	.estudios-list{
 		margin: .2em;
 	}
 }
