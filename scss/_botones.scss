@@ -1,0 +1,14 @@
+.boton {
+	border: 2px solid;
+	padding: 7px 20px;
+	border-radius: 7px;
+	text-decoration: none;
+	color:#0d0d0dc7;
+	background-color: #F2DC6B;
+    
+    :hover {
+        color:#0D0D0D;
+        font-weight: 900;
+        background-color: #fff021;
+    }
+}

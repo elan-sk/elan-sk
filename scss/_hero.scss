@@ -1,0 +1,27 @@
+/* section hero */
+.hero .bienvenida {
+	width: 400px;
+}
+.hero h1 {
+	color: white;
+	width: 100%;
+	display: inline-block;
+}
+.hero a {
+	margin-top: 20px;
+	margin-left: 5px;
+	display: inline-block;
+}
+
+.hero {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	background-color: $color-enfasis;
+}
+.hero-imagen {
+	object-fit: cover;
+	width:600px;
+	height:400px;
+}
