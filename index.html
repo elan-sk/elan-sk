@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <link rel="icon" type="image/png" href="images/favicon.ico"/>
   <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="scss/estilo.css">
+  <link rel="stylesheet" type="text/css" href="css/estilo.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -56,7 +56,6 @@
   <section class="container"></section>
     
     <!--Portafolio ===================================-->
-    
     <div id="Portafolio" class="container">
       <h2>Portafolio</h2>
       <h3>Proyectos destacados</h3>
@@ -76,15 +75,15 @@
 
       <!--Proyecto2 =====================================-->
       <article class="project">
-        <figure class="project-imageContainer imagen-izquierda" >
-          <img src="images/Proyectos/botSignosVitales.png" alt="Bot de telegram">
-        </figure>
-        <div class="project-textContainer">
+        <div class="project-textContainer invertido">
           <h3 class="project-title">BOT REGISTRO SIGNOS VITALES</h3>
           <h6 class="project-course">UAM</h6>
           <p><small><strong>Presentación:</strong> <a href="https://www.youtube.com/watch?v=yRGf2ueneRo" target="_blank">Ver video</a> </small><br/><small><strong>Repositorio:</strong> <a href="https://github.com/Castel2/BotSignosVitales" target="_blank">Ver repositorio</a> </small><p>
             <p class="project-details"> En el marco de la Especialización de Ingeniería, se realizó en grupo un Bot de telegrama usando Python. Esta aplicación es capaz de registrar los signos vitales de pacientes, con el fin de que se pueda hacer seguimiento a dichos signos por parte de personal médico. </p>
           </div>
+          <figure class="project-imageContainer" >
+            <img src="images/Proyectos/botSignosVitales.png" alt="Bot de telegram">
+          </figure>
         </article>
         
         <!--Proyecto3 =====================================-->
@@ -102,27 +101,26 @@
         
         <!--Proyecto4 =====================================-->
         <article class="project">
-          <figure class="project-imageContainer imagen-izquierda" >
-            <img src="images/Proyectos/EQUIPRES.png" alt="EQUIPRES">
-      </figure>
-      <div class="project-textContainer">
-        <h3 class="project-title">EQUIPRES</h3>
-        <h6 class="project-course">UCC</h6>
-        <p><small><strong>Presentación:</strong> <a href="https://www.youtube.com/watch?v=Yo6BoXxQrGo" target="_blank">Ver video</a> </small><br/><small><strong>Instalador:</strong> <a href="https://dpsco-my.sharepoint.com/personal/elan_perea_prosperidadsocial_gov_co/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Felan%5Fperea%5Fprosperidadsocial%5Fgov%5Fco%2FDocuments%2FxxPERSONAL%2FEQUIPRESforTecNM%2Ezip&parent=%2Fpersonal%2Felan%5Fperea%5Fprosperidadsocial%5Fgov%5Fco%2FDocuments%2FxxPERSONAL&originalPath=aHR0cHM6Ly9kcHNjby1teS5zaGFyZXBvaW50LmNvbS86dTovZy9wZXJzb25hbC9lbGFuX3BlcmVhX3Byb3NwZXJpZGFkc29jaWFsX2dvdl9jby9FWTZoMUlXSHhCUk9xTXgtVy1ZQU9TWUJQT01hek4wcEFkc0Q4bTFOSDJzX1JBP3J0aW1lPVRvcVhmTzVLMlVn" target="_blank">Descargar</a> </small><p>
-          <p class="project-details"> Como producto final de las prácticas universitarias, se desarrolló una aplicación con Visual Basic para la administración de los préstamos de los equipos de cómputo de la sala de sistemas de universidad. </p>
-        </div>
-      </article>
-      
-      
+          <div class="project-textContainer invertido">
+            <h3 class="project-title">EQUIPRES</h3>
+            <h6 class="project-course">UCC</h6>
+            <p><small><strong>Presentación:</strong> <a href="https://www.youtube.com/watch?v=Yo6BoXxQrGo" target="_blank">Ver video</a> </small><br/><small><strong>Instalador:</strong> <a href="https://dpsco-my.sharepoint.com/personal/elan_perea_prosperidadsocial_gov_co/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Felan%5Fperea%5Fprosperidadsocial%5Fgov%5Fco%2FDocuments%2FxxPERSONAL%2FEQUIPRESforTecNM%2Ezip&parent=%2Fpersonal%2Felan%5Fperea%5Fprosperidadsocial%5Fgov%5Fco%2FDocuments%2FxxPERSONAL&originalPath=aHR0cHM6Ly9kcHNjby1teS5zaGFyZXBvaW50LmNvbS86dTovZy9wZXJzb25hbC9lbGFuX3BlcmVhX3Byb3NwZXJpZGFkc29jaWFsX2dvdl9jby9FWTZoMUlXSHhCUk9xTXgtVy1ZQU9TWUJQT01hek4wcEFkc0Q4bTFOSDJzX1JBP3J0aW1lPVRvcVhmTzVLMlVn" target="_blank">Descargar</a> </small><p>
+              <p class="project-details"> Como producto final de las prácticas universitarias, se desarrolló una aplicación con Visual Basic para la administración de los préstamos de los equipos de cómputo de la sala de sistemas de universidad. </p>
+            </div>
+            <figure class="project-imageContainer" >
+              <img src="images/Proyectos/EQUIPRES.png" alt="EQUIPRES">
+            </figure>
+          </article> 
     </div>
   
-    <!--formacion ===============================================================-->
+    <!--Estudios ===============================================================-->
     <section id="Estudios" data-class="Estudios-list">
       <div class="container">
         <h2>Estudios</h2>
         <h3>Educación Formal</h3>
       </div>
       <div class="container">
+
        <!--estudio1================================================-->
        <article class="estudio">
          <figure class="estudio-imageContainer">
@@ -133,9 +131,6 @@
            <p class="estudio-description">Técnico con profundización en Informática - Colegio Carrasquilla</p>
          </div>
        </article>
-
-
-
 
        <!--estudio2================================================-->
        <article class="estudio">

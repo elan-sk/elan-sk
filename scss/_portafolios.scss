@@ -1,55 +1,82 @@
+$margenes: (
+	vertical:0,
+	horizontal:.5em,
+	bottom:1em
+);
+
+$padding: .8em;
+$gap:1em;
+$border-radius: .7em;
+
+//Punto donde las partes ocupan todo el espacio
+$breakpoint: 769px;
+
+
+
+/*funcion para investigar
+$suma-margenes: calc (map-get($margenes, horizontal) + $padding + $gap / 2);
+$tamano-elementos:calc($breakpoint/2 - $suma-margenes);
+@debug $tamano-elementos;
+*/
+
 /* section portafolio */
 .portafolio {
 	font-size: 1em;
 	background:$color-fondo;
 	padding: 1.2em;
 }
+
 .project {
 	/*border: 1px solid gray;*/
-	border-radius: .7em;
+	border-radius: $border-radius;
 	border: $borde1;
-	padding: .8em;
-	margin: 0 10px;
-	margin-bottom: 30px;
+	padding: $padding;
+	margin: map-get($margenes, vertical) map-get($margenes, horizontal);
+	margin-bottom: map-get($margenes, bottom);
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
 	font-size: 18px;
-}
-.project-textContainer{
-	padding-right: .5em;
-}
-.project-textContainer, .project-imageContainer{
-	width: calc((100% - (.8em  * 2)) / 2);
-}
-.project-imageContainer{
-	text-align: center;
-}
-.project-imageContainer img{
-	max-width: 100%;
-}
-.project strong {
-	font-family: 'Source Sans Pro';
-	font-weight: bold;
-}
-.project-title {
-	font-size:1.6em;
-	margin-left: 0;
-	margin-top: .1em;
-}
-.project-details {
-	font-size: 1.1em;
-}
-.project-course {
-	line-height: 0;
-	font-size: 1em;
-	margin: 1.5em 0;
-}
-.project small {
-	font-size:1em;
-}
-.imagen-izquierda{
-	margin-right: 1em;
-}
+	gap: $gap;
+
+	.project-textContainer, .project-imageContainer {
+		flex: 1 1 341px;
+	}
+
+	.project-textContainer.invertido {
+		order: 1;
+		@media screen and (max-width: $breakpoint) {
+			order: 0;
+		}
+	}
 	
+	
+	.project-imageContainer {
+		text-align: center;
+		
+		img {
+			max-width: 100%;
+		}
+	}
+
+	strong {
+		font-family: 'Source Sans Pro';
+		font-weight: bold;
+		font-size: 1em;
+	}
+	.project-title {
+		font-size:1.6em;
+		margin-left: 0;
+		margin-top: .1em;
+	}
+	.project-details {
+		font-size: 1.1em;
+	}
+	.project-course {
+		line-height: 0;
+		font-size: 1em;
+		margin: 1.5em 0;
+	}
+
+}
