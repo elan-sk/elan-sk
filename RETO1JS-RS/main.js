@@ -414,7 +414,7 @@ const btnSalir = document.getElementById('btnSalir');
             }
             
             const IdOpcionSeleccionada = await elementoSeleccionado(contenedorOpciones, 'btnOpcion' , 'click');
-            console.log(IdOpcionSeleccionada);
+            
             let {opciones} = pregunta;
             let indiceOpcionSeleccionada = posicionOpcion(IdOpcionSeleccionada);
             let opcionSeleccionada = opciones[indiceOpcionSeleccionada];
@@ -438,8 +438,7 @@ const btnSalir = document.getElementById('btnSalir');
             deshabilitarElementos(btnsOpciones);
             await esperarSegundos(2); 
             animation(encabezadoPregunta, 'desaparecer', 0.2);
-            animation(contenedorPreguntas, 'desaparecer', 0.2);
-          
+            await animation(contenedorPreguntas, 'desaparecer', 0.2);   
         }
 
        
