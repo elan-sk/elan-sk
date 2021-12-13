@@ -329,6 +329,7 @@ function letra (indice) {
 }
 
 
+
 // VARIABLES ==================================================================
 //ELEMENTOS++++++++++++++++++++++++++
 //ELEMENTOS SECCION LOGIN---------------------------------
@@ -337,7 +338,6 @@ const inputAlias = document.getElementById('alias');
 const btnIngresar = document.getElementById('btnIngresar');
 //ELEMENTOS SECCION PREGUNTAS ------------------------------------- 
 const seccionPreguntas = document.getElementById('seccionPreguntas');
-const contenedorPreguntas = document.getElementById('contenedor-pregunta');
 const encabezadoPregunta = document.getElementById('encabezado');
 const imagen = document.getElementById('imagen');
 const numeroPregunta = document.getElementById('numeroPregunta');
@@ -404,17 +404,9 @@ const btnSalir = document.getElementById('btnSalir');
             restaurarElementos(btnsOpciones);
             
             await cargarPregunta(pregunta, encabezadoPregunta, imagen, btnsOpciones);
-
-            if (parseInt(indice) === 0){
-                await animation(seccionPreguntas, 'entrar-derecha', 1); 
-            
-            }else{
-                animation(encabezadoPregunta, 'aparecer', 1.2);
-                await animation(contenedorPreguntas, 'aparecer', 1.2);
-            }
             
             const IdOpcionSeleccionada = await elementoSeleccionado(contenedorOpciones, 'btnOpcion' , 'click');
-            
+            console.log(IdOpcionSeleccionada);
             let {opciones} = pregunta;
             let indiceOpcionSeleccionada = posicionOpcion(IdOpcionSeleccionada);
             let opcionSeleccionada = opciones[indiceOpcionSeleccionada];
@@ -436,9 +428,7 @@ const btnSalir = document.getElementById('btnSalir');
             }
             
             deshabilitarElementos(btnsOpciones);
-            await esperarSegundos(2); 
-            animation(encabezadoPregunta, 'desaparecer', 0.2);
-            await animation(contenedorPreguntas, 'desaparecer', 0.2);   
+            await esperarSegundos(2);
         }
 
        
