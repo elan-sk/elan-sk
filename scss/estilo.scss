@@ -6,6 +6,7 @@ $borde1: 2px solid rgba(128, 128, 128, 0.482);
 $borde2: 1px solid rgba(0, 0, 0, 0.641);
 
 //Importaciones 
+@import "reset";
 @import "iconos";
 @import "botones";
 @import "header";
@@ -14,65 +15,3 @@ $borde2: 1px solid rgba(0, 0, 0, 0.641);
 @import "estudios";
 @import "contacto";
 @import "footer";
-
-*{
-	margin:0;
-	padding:0;
-	
-	box-sizing: border-box;
-}
-
-html {
-	scroll-behavior: smooth;
-}
-
-body {
-	font-family: 'Source Sans Pro',sans-serif;
-	background: $color-fondo;
-}
-
-
-
-.container{
-	/* border: 1px solid red; */
-	max-width: 1050px;
-	flex: 1;
-	margin: 0 auto;
-	padding: inherit;
-	display: inherit;
-	height: inherit;
-	display: inherit;
-	justify-content: inherit;
-	align-items: inherit;
-	flex-wrap: wrap;
-}
-
-
-h1,h2,h3,h4,h5,h6 {
-	font-family: 'Fjalla One', Times, sans-serif;
-	font-weight: normal;
-	display: inline-block;
-	margin: 1.5em .5em;
-}
-h1 {
-	font-size: 2em;
-	line-height: 1.5;
-	letter-spacing: -.2px;
-	text-transform: capitalize;
-	margin-left: 10px;
-	width: 500px;
-	color: $color-fondo;
-
-	strong {
-		color: $color-enfasis2;
-	}	
-}
-
-h2 {
-	color: $color-enfasis2;
-	text-transform: uppercase;
-	font-family: 'Source Sans Pro';
-	font-weight: bold;
-	font-size: 1.3em;
-	margin-bottom:2em;
-}

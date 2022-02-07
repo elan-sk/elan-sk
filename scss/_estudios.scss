@@ -1,11 +1,12 @@
 /* estudios */
 
 .estudios-list {
-	display: flex;
+	display: flex; 
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
 }
+
 .estudio {
 	border: $borde1;
 	margin: 1%;
@@ -41,5 +42,6 @@
 }
 
 .estudio-title {
+	border: 3px solid b;
 	margin: 5px;
 }
