@@ -1,0 +1,11 @@
+.alliances {
+  @include bgcover;
+  background-image: url('../img/cloud-top.png');
+  background-position: top center;
+  padding: rem(200px) 0 rem(20px);
+
+  &__title {
+    @extend %heading;
+    padding-bottom: rem(60px);
+  }
+}

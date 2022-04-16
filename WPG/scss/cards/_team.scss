@@ -1,0 +1,59 @@
+.card-team {
+  background-color: $white;
+  border-radius: rem(10px);
+  margin: rem(10px);
+  overflow: hidden;
+  position: relative;
+
+  $self: &;
+
+  &__overlay {
+    background-color: $yellow;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    width: 0;
+    opacity: 0;
+    top: 0;
+    transition: width .55s ease-in;
+
+    &-text {
+      @include center('both');
+
+      @extend %body-s;
+      opacity: 0;
+      padding: rem(16px);
+      width: 90%;
+      transition: opacity 1.5s ease-in-out;
+    }
+  }
+
+  &:hover {
+    #{$self}__overlay {
+      opacity: 1;
+      width: 100%;
+      z-index: 2;
+
+      &-text {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__image {
+    margin: 0;
+  }
+
+  &__caption {
+    margin: 0 rem(16px);
+  }
+
+  &__name {
+    @extend %h2-c;
+    text-transform: none;
+  }
+
+  &__position {
+    @extend %body-m;
+  }
+}

@@ -1,0 +1,35 @@
+.give{
+
+    .container{
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    &-text{
+        margin-bottom: rem(50px);
+        padding: 5% 22%;
+        &__title{
+            text-align: center;
+            @extend %h1;
+            margin-bottom: rem(50px);
+        }
+        &__info{
+            text-align: center;
+        }
+    }
+    &-cards-items{
+        flex: 1 1 rem(300px);
+        gap: rem(20px);
+        justify-content: center;
+
+        &__link{
+            text-decoration: none;
+            &:hover{
+                background-color: $white;
+                border-radius: rem(30px);
+            }
+        }
+    }
+
+}

@@ -1,0 +1,23 @@
+.question-process {
+  margin-bottom: 8vw;
+  @include from(l){
+    margin-bottom: rem(150px);
+  }
+  &__links {
+    @include center('horizontal');
+    justify-content: center;
+    padding: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    li{
+      flex: 1 1 25%;
+      list-style: none;
+      text-align: center;
+      img {
+        max-width: rem(350px);
+        width: 100%;
+      }
+    }
+  }
+}

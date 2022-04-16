@@ -1,0 +1,138 @@
+.donation-info {
+  margin-top: rem(-150px);
+  padding: 0 0 rem(30px);
+  position: relative;
+
+  &__container {
+    padding: 0  rem(60px);
+    @include from(s){
+      padding:0;
+    }
+  }
+
+  &__title {
+    @include bgcover;
+    background-image: url('../img/cloud-top.png');
+    background-position: top center;
+    padding: rem(300px) 10% rem(60px);
+
+    h2{
+      @extend %h1;
+    }
+  }
+
+  &__carousel {
+    @include bgcover;
+    background-image: url('../img/cloud-bottom.png');
+    background-position: bottom center;
+  }
+
+  &__text-content {
+    align-items: center;
+    flex-direction: column;
+    gap: rem(30px);
+    justify-content: center;
+    padding: 4% 4% rem(50px);
+    
+    @include from(l){
+      padding: rem(30px) rem(30px) rem(50px);
+    }
+  }
+
+  &__subtitle {
+    @extend %h2-b;
+    margin: rem(15px) 0 rem(10px);
+  }
+
+  &__advance {
+    padding: 0 1%;
+
+    &-graphic-wrapper {
+      padding-top: rem(40px);
+      position: relative;
+    }
+
+    &-graphic-background{
+      background-color: $grey-lt;
+      border-radius: rem(80px);
+      height: rem(40px);
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+
+    &-graphic-bar {
+      background-color: $yellow;
+      border-radius: rem(80px);
+      height: rem(40px);
+      left: 0;
+      position: absolute;
+      top: 0;
+    }
+
+    &-indicator{
+      position: relative;
+      height: rem(70px);
+    }
+
+    &-indicator-value {
+      border-bottom: rem(35px) solid $yellow;
+      border-left: rem(25px) solid transparent;
+      border-top: rem(1px) solid transparent;
+      border-right: rem(25px) solid transparent;
+      height: 0;
+      position: absolute;
+      right: 0;
+      top:0;
+      transform: translateX(50%);
+      width: 0;
+
+      span{
+        position: absolute;
+        right: 0;
+        top: rem(40px);
+        transform: translateX(50%);
+        width: max-content;
+      }
+    }
+
+    &-title {
+      span {
+        @extend %h2-b;
+      }
+    }
+  }
+
+  &__goal {
+    @extend %h2-b;
+  }
+
+  &__arrows {
+    @include center('both');
+    max-width: 94vw;
+    padding: 0 rem(10px);
+    top: rem(1000px);
+    width: 100%;
+
+    @include from(l){
+      max-width: rem(1950px);
+      top: rem(650px);
+      width: 98%;
+    }
+  }
+
+  &__prev,
+  &__next {
+    display: block;
+    position: absolute;
+  }
+
+  &__prev {
+    left: 0;
+  }
+
+  &__next {
+    right: 0;
+  }
+}

@@ -1,0 +1,47 @@
+.hero-video {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  max-height: rem(400px);
+  width: 100%;
+
+  @include from(s){
+    max-height: rem(700px);
+  }
+  @include from(m){
+    max-height: rem(750px);
+  }
+  @include from(l) {
+    max-height: rem(900px);
+  }
+
+  @include from(xl) {
+    max-height: rem(1200px);
+  }
+
+  &__source {
+    @include center('both');
+    height: auto;
+    width: 140vw;
+  }
+
+  &__caption {
+    @include center('both');
+  }
+
+  &__titles-wrapper {
+    max-width: rem(300px);
+
+    @include from(s){
+      max-width: initial;
+    }
+  }
+
+  &__title {
+    @extend %header-lt;
+  }
+
+  &__subtitle {
+    @extend %header-bd;
+  }
+}

@@ -1,0 +1,30 @@
+.posts-partners-card {
+
+  &__container {
+    .slick-track{
+      display: flex;
+      gap: rem(15px);
+      @include from(s){
+        gap: rem(30px);
+      }
+      @include from(m){
+        gap: rem(60px);
+      }
+      @include from(l){
+        gap: 0;
+        padding-left: 3%;
+      }
+    }
+  }
+
+  &__thumbnail {
+    border-radius: 50%;
+    margin: 0;
+    overflow: hidden;
+    width: rem(150px);
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.project-tabs {
+  position: relative;
+  margin: rem(60px) 0;
+
+  $self: &;
+
+  &__nav {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin-bottom: rem(30px);
+
+    @include from(l) {
+      flex-flow: row;
+      margin-bottom: rem(60px);
+    }
+  }
+
+  &__nav-item {
+    background-color: $white;
+    border-radius: rem(20px);
+    margin: rem(5px);
+    padding: rem(30px);
+
+    @include from(l) {
+      padding: rem(20px) rem(60px);
+      width: 27%;
+    }
+
+    img {
+      filter: grayscale(100%);
+    }
+  }
+
+  &__link {
+    img {
+      width: 100%;
+    }
+    &.active {
+      img {
+        filter: none;
+      }
+    }
+  }
+}

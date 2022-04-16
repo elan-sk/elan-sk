@@ -1,0 +1,26 @@
+.main-content{
+  margin-top: rem(150px);
+
+  .conte{
+    margin-top: rem(50px);
+    border-radius: rem(30px);
+    background-color:$white;
+    }
+    &__image{
+      img{
+        border-radius: rem(30px);
+      }
+    }
+    &__title{
+      text-align: center;
+      @extend %h1;
+    }
+    &__date{
+      font-family: $font-primary;
+    }
+    &__text{
+      text-align: justify;
+    }
+
+       
+}

@@ -1,0 +1,11 @@
+.sidemap {
+  background-color: $white;
+
+  &__content {
+    padding: rem(150px) rem(40px);
+
+    @include from(l) {
+      padding-top: rem(250px);
+    }
+  }
+}

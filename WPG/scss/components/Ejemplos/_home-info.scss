@@ -1,0 +1,77 @@
+.home-info {
+  padding: rem(60px) 0;
+  text-align: center;
+  margin: auto;
+
+  &__container {
+    background-color: $white;
+    border-radius: 30px;
+    padding: rem(70px) rem(30px);
+    @include from(l){
+      padding: rem(150px) rem(100px);
+    }
+  }
+
+  .row{
+    margin-bottom: rem(20px);
+  }
+
+  &__text-container{
+    display: flex;
+    flex-direction: column;
+    gap: rem(30px);
+    padding: 2%;
+  }
+
+  &__paragraph{
+    @extend  %body;
+    margin-bottom: rem(50px);
+  }
+
+
+  &__eyebrow{
+    @extend %h3;
+    margin-bottom: rem(20px);
+  }
+
+  &__title{
+    @extend %h1-b;
+    margin-bottom: rem(20px);
+  }
+
+
+  &__btmtxt{
+    @extend %body-s;
+  }
+
+  &__ctabtm{
+    padding: rem(50px) 0;
+  }
+
+  &-items{
+    padding: rem(60px) rem(30px);
+    &:hover{
+      background-color: $white;
+      border-radius: rem(30px);
+      box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+    }
+
+    &__image{
+      padding: 5% 10%;
+      @include from(s){
+        padding: 5% 20%;
+      }
+      @include from(l){
+        padding: rem(50px) rem(100px);
+      }
+    }
+
+    &__titles{
+      @extend %h2;
+    }
+
+    &__paragraph{
+      @extend  %body-s;
+    }
+  }
+}

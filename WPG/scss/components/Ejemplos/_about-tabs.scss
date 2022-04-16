@@ -1,0 +1,42 @@
+.about-tabs {
+  margin: rem(40px) 0;
+
+  @include from(l) {
+    margin: rem(80px) 0;
+  }
+
+  &__nav {
+    justify-content: center;
+    margin-bottom: rem(35px);
+
+    @include from(l) {
+      margin-bottom: rem(70px);
+    }
+
+    &-item {
+      border-left: rem(1px) solid $black;
+      border-right: rem(1px) solid $black;
+      padding: 0 rem(30px);
+
+      &:first-child {
+        border-left: none;
+      }
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+
+    &-link {
+      @extend %reset-appearance;
+      @extend %h2-c;
+
+      color: $black;
+      text-align: center;
+
+      &.active {
+        color: $yellow;
+      }
+    }
+  }
+}

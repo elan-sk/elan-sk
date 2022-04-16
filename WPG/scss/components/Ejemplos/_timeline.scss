@@ -1,0 +1,113 @@
+.timeline {
+  position: relative;
+  padding: rem(150px) 0 rem(30px);
+  z-index: 10;
+
+  $self: &;
+
+  &__slide {
+    padding: rem(30px);
+
+    @include from(l) {
+      min-height: initial;
+      opacity: .65;
+    }
+  }
+
+  .slick-center {
+    #{$self}__slide {
+      @include from(m) {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    background-color: $white;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    overflow: hidden;
+    padding-left: 0;
+    position: relative;
+    width: 70vw;
+
+    @include from(l) {
+      flex-wrap: nowrap;
+      max-width: rem(1200px);
+    }
+  }
+
+  &__header {
+    padding: 0 10% rem(20px);
+    justify-content: center;
+    h2{
+      @extend %h1;
+      max-width: rem(1024px);
+      text-align: center;
+    }
+  }
+
+  &__image-wrapper {
+    padding: 0;
+  }
+
+  &__image {
+    border-radius: 20px;
+    margin: 0;
+    overflow: hidden;
+    @include fluid-aspect (1 1, 'img');
+  }
+
+  &__content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: rem(20px);
+    justify-content: center;
+    padding: 5%;
+    text-align: center;
+  }
+
+  &__title {
+    h2 {
+      @extend %h1-b;
+    }
+  }
+
+  &__text {
+    text-align: left;
+  }
+
+  &__arrows {
+    @include center('both');
+    height: rem(60px);
+    max-width: 80vw;
+    top: rem(600px);
+    width: 100%;
+    z-index: 2;
+
+    @include from(s){
+      top: rem(690px);
+    }
+
+    @include from(l) {
+      max-width: rem(1260px);
+      top: 64%;
+    }
+  }
+
+  &__prev,
+  &__next {
+    display: block;
+    position: absolute;
+  }
+
+  &__prev {
+    left: 0;
+  }
+
+  &__next {
+    right: 0;
+  }
+}

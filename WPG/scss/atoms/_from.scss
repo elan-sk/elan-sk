@@ -1,0 +1,155 @@
+.site-form {
+  margin: rem(70px) 0;
+  $self: &;
+
+  &--texture {
+    .container {
+      @include bgcover;
+      background-image: url("../img/pattern-lt.svg");
+    }
+  }
+
+  .container {
+    background-color: $red-lt;
+    border-radius: rem(30px);
+    padding: 5%;
+
+    @include from(l) {
+      padding: 5% 5% 2%;
+    }
+  }
+
+  .row {
+    padding-bottom: rem(20px);
+    gap: rem(20px);
+
+    @include from(l) {
+      gap: 0;
+    }
+  }
+
+  &__column-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: rem(20px);
+  }
+
+  &__header {
+    text-align: center;
+    h2 {
+      @extend %h1;
+      padding-bottom: rem(30px);
+    }
+  }
+
+  &__descripcion {
+    align-items: center;
+    margin-bottom: rem(60px);
+    padding: 0 10%;
+  }
+
+  &__label {
+    @extend %body-s;
+    color: $black;
+    font-weight: bold;
+    padding: rem(10px) 0 rem(5px);
+  }
+
+  &__text {
+    input {
+      border: none;
+      border-radius: rem(20px);
+      height: rem(60px);
+      padding: 0 10px;
+      width: 100%;
+    }
+  }
+
+  &__select {
+    select {
+      border: none;
+      border-radius: rem(20px);
+      height: rem(60px);
+      padding: 0 10px;
+      width: 100%;
+      color: $grey;
+    }
+  }
+
+  &__textarea {
+    flex: 1 0;
+    textarea {
+      border: none;
+      border-radius: rem(20px);
+      height: 100%;
+      padding: rem(10px);
+      width: 100%;
+    }
+  }
+
+  &__acceptance {
+    display: flex;
+    justify-content: center;
+    padding: rem(30px) 0;
+  }
+
+  &__submit {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    input,
+    button {
+      @extend %button-submit;
+
+      &:disabled {
+        filter: opacity(0.5);
+
+        &:hover {
+          color: $white;
+          background-color: $yellow;
+        }
+      }
+    }
+  }
+
+  &__double {
+    justify-content: space-between;
+    gap: rem(20px);
+    div {
+      flex: 1 1;
+    }
+  }
+
+  &__file {
+    label {
+      padding-bottom: rem(10px);
+    }
+  }
+
+  &--footer {
+    margin: rem(100px) 0 0;
+
+    .container {
+      padding: rem(40px) 5% 1%;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .row {
+      margin: 0;
+      padding: 0;
+    }
+
+    #{$self}__acceptance {
+      padding: 0 0 rem(30px);
+      margin-top: 0;
+    }
+
+    #{$self}__text {
+      input {
+        margin-bottom: rem(20px);
+      }
+    }
+  }
+}

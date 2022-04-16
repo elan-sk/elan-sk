@@ -1,0 +1,51 @@
+.filter-questions {
+  &-item {
+    background-color: $white;
+    border-radius: rem(30px);
+    display: flex;
+    flex-direction: column;
+    grid-column: span 1;
+    justify-content: flex-start;
+    padding: rem(40px);
+
+    &__imagen {
+      @include imageBg("../img/icono-question.svg", rem(100px), rem(100px));
+    }
+
+    &__text {
+      ul {
+        margin: 0;
+        padding: rem(20px) 0;
+      }
+      li {
+        @extend %body-s;
+        border-right: 1.5px solid $yellow;
+        color: $yellow;
+        font-weight: 600;
+        line-height: 1;
+        list-style: none;
+        padding: 0 rem(5px);
+
+        &:first-child {
+          padding-left: 0;
+        }
+
+        &:last-child {
+          border: none;
+        }
+      }
+    }
+
+    &__title {
+      padding: rem(10px) 0;
+      h3 {
+        @extend %h2-b;
+        line-height: 1.5;
+      }
+    }
+
+    &__link {
+      font-size: rem(25px);
+    }
+  }
+}

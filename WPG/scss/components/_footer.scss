@@ -1,0 +1,8 @@
+.footer {
+  background-color: aquamarine;
+  height: auto;
+  padding: rem(20px);
+  &__wrapper {
+    gap: rem(90px);
+  }
+}

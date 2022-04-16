@@ -1,0 +1,111 @@
+.management-tabs {
+  @include bgcover;
+  background-image: url("../img/cloud-bottom.png");
+  background-position: bottom center;
+  padding: rem(45px) 0;
+
+  $self: &;
+
+  @include from(l) {
+    padding: rem(110px) 0 rem(94px);
+  }
+
+  &__header {
+    margin-bottom: rem(25px);
+    text-align: center;
+
+    @include from(l) {
+      margin-bottom: rem(74px);
+    }
+  }
+
+  &__title {
+    @extend %heading;
+    text-align: center;
+  }
+
+  &__nav {
+    justify-content: center;
+    margin-bottom: rem(35px);
+
+    @include from(l) {
+      margin-bottom: rem(70px);
+    }
+
+    &-item {
+      border-left: rem(1px) solid $black;
+      border-right: rem(1px) solid $black;
+      padding: 0 rem(30px);
+
+      &:first-child {
+        border-left: none;
+      }
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+
+    &-link {
+      @extend %reset-appearance;
+      padding: 0;
+
+      #{$self}__name {
+        @extend %h2-c;
+
+        color: $black;
+        text-align: center;
+      }
+
+      &.active {
+        #{$self}__name {
+          color: $yellow;
+        }
+      }
+    }
+  }
+
+  &__description {
+    margin: rem(40px) auto;
+    max-width: rem(720px);
+    text-align: center;
+
+    @include from(l) {
+      margin: rem(80px) auto;
+    }
+  }
+
+  &__year {
+    display: block;
+    margin-bottom: rem(16px);
+
+    &-item {
+      border-radius: rem(10px);
+      min-height: rem(50px);
+      padding: rem(14px);
+      position: relative;
+    }
+
+    &-number,
+    &-ammount {
+      @extend %h1;
+      color: $white;
+      line-height: 1;
+    }
+
+    &-info {
+      @include center("vertical");
+
+      color: $white;
+      max-width: rem(140px);
+      right: rem(10px);
+      text-align: center;
+    }
+
+    &-criteria {
+      @extend %body-s;
+      color: $white;
+      display: block;
+    }
+  }
+}

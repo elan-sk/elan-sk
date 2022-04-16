@@ -1,0 +1,41 @@
+.posts-news-card {
+  background-color: $white;
+  border-radius: rem(20px);
+  box-shadow: 0 0 rem(8px) rgba($grey, .7);
+  flex: 1 1 rem(280px);
+  height: max-content;
+  margin: 2% 1%;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  @include from(m){
+    flex: 1 1 rem(300px);
+    max-width: rem(300px);
+  }
+  @include from(l){
+    flex: 1 1 rem(320px);
+    max-width: rem(320px);
+  }
+
+  &__thumbnail {
+    @include fluid-aspect(3 2, 'img');
+    border-bottom-left-radius: rem(20px);
+    border-bottom-right-radius: rem(20px);
+    min-width: 100%;
+    overflow: hidden;
+  }
+
+  &__content {
+    padding: rem(20px) rem(30px);
+  }
+
+  &__title {
+    @extend %h2-b;
+  }
+
+  &__text {
+    p {
+      @extend %body-s;
+    }
+  }
+}

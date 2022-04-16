@@ -1,0 +1,38 @@
+.banner-feature {
+  padding:0;
+
+  @include from(s){
+    padding: rem(60px) 0 0;
+  }
+
+  &__image{
+    img{
+      width: 100%;
+    }
+  }
+
+  &__text-container{
+    display: flex;
+    flex-direction: column;
+    gap: rem(30px);
+    padding: 2%;
+  }
+
+  &__body{
+    @extend %body-m;
+  }
+
+  &__eyebrow{
+    @extend %h3;
+  }
+
+  &__title{
+    @extend %h1-b;
+    width: 100px;
+  }
+
+  &__cta{
+    display: flex;
+    padding-top: rem(20px);
+  }
+}

@@ -1,0 +1,88 @@
+.filter-posts {
+  margin: rem(25px) 0;
+
+  $self: &;
+
+  @include from(l) {
+    margin: rem(50px) 0;
+  }
+
+  &__row {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+
+    @include from(l) {
+      flex-flow: wrap;
+    }
+  }
+
+  &__column {
+    margin-top: rem(16px);
+    position: relative;
+
+    @include from(l) {
+      margin: rem(24px) 0;
+      flex: 1 0 0;
+    }
+  }
+
+  &__search {
+    position: relative;
+    width: 100%;
+
+    &-icon {
+      @include center("vertical");
+      right: rem(20px);
+      z-index: 2;
+    }
+  }
+
+  &__text {
+    @extend %input;
+    width: 100%;
+  }
+
+  &__checkbox {
+    background-color: $white;
+    border: rem(1px) solid $grey-lt;
+    border-radius: rem(10px);
+    display: inline-block;
+    height: rem(30px);
+    position: relative;
+    vertical-align: middle;
+    width: rem(30px);
+
+    &::after {
+      font-size: 0;
+      transition: all 0.35s ease-in;
+    }
+  }
+
+  &__checkbox-control {
+    cursor: pointer;
+    display: block;
+    height: rem(30px);
+    left: 0;
+    opacity: 0.005;
+    position: absolute;
+    top: 0;
+    width: rem(30px);
+    z-index: 1;
+
+    &:checked + span {
+      background-color: $yellow;
+
+      &::after {
+        @include center("both");
+        @include faIcon("\f00c", rem(16px));
+
+        color: $white;
+      }
+    }
+  }
+
+  &__button {
+    @extend %button-primary;
+  }
+}
