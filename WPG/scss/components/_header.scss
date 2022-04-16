@@ -4,7 +4,7 @@
   position: sticky;
 
   &__logo {
-    @include imageBg("../img/logo.png", rem(72px), rem(75px));
+    @include imageBg("../img/Logo.png", rem(72px), rem(75px));
     text-align: center;
   }
 
