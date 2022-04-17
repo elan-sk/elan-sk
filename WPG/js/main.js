@@ -1,4 +1,4 @@
-//! Mostrar el header --------------------------------------
+//! Mostrar el header ------------------------------------------------
 let lastScroll = $(window).scrollTop();
 
 $(window).scroll(function() {
@@ -14,24 +14,19 @@ $(window).scroll(function() {
             $('.header').removeClass().addClass('header');
         }
     }
-
     // scroll update
     lastScroll = currentScroll <= 0 ? 0 : currentScroll;
 });
-//!----------------------------------------------------------
+//!--------------------------------------------------------------------
 
-//! slider---------------------------------------------------
+//! slider-------------------------
 $('.slider-banner').slick({
     dots: true,
-    infinite: true,
     speed: 500,
-    slidesToShow: 1,
-    adaptiveHeight: true,
-    dots: true,
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 5000,
     pauseOnHover:false,
     pauseOnDotsHover:true,
 });
-//!----------------------------------------------------------
+//!---------------------------------
