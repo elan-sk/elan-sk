@@ -20,13 +20,17 @@ $(window).scroll(function() {
 //!--------------------------------------------------------------------
 
 //! slider-------------------------
-$('.slider-banner').slick({
-    dots: true,
-    speed: 500,
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    pauseOnHover:false,
-    pauseOnDotsHover:true,
+$( window ).on( "load", function() {
+    $(".slider-banner").css("display", "block");
+    $('.js-slider').slick({
+        dots: true,
+        speed: 1000,
+        arrows: false,
+        fade: true,
+        autoplay: true,
+        autoplaySpeed: 5500,
+        pauseOnHover:false,
+        pauseOnDotsHover:true,
+    });
 });
 //!---------------------------------
