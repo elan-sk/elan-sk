@@ -20,7 +20,7 @@ $(window).scroll(function() {
 //!--------------------------------------------------------------------
 
 //! slider-------------------------
-$( window ).on( "load", function() {
+/* $( window ).on( "load", function() { */
     $(".slider-banner").css("display", "block");
     $('.js-slider').slick({
         dots: true,
@@ -32,5 +32,5 @@ $( window ).on( "load", function() {
         pauseOnHover:false,
         pauseOnDotsHover:true,
     });
-});
+/* }); */
 //!---------------------------------
