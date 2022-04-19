@@ -19,18 +19,20 @@ $(window).scroll(function() {
 });
 //!--------------------------------------------------------------------
 
-//! slider-------------------------
-/* $( window ).on( "load", function() { */
-    $(".slider-banner").css("display", "block");
-    $('.js-slider').slick({
-        dots: true,
-        speed: 1000,
-        arrows: false,
-        fade: true,
-        autoplay: true,
-        autoplaySpeed: 5500,
-        pauseOnHover:false,
-        pauseOnDotsHover:true,
-    });
-/* }); */
-//!---------------------------------
+//! slider--------------------------------------------------------------
+$('.js-slider').slick({
+    dots: true,
+    speed: 1000,
+    arrows: false,
+    fade: true,
+    autoplay: true,
+    autoplaySpeed: 5500,
+    pauseOnHover:false,
+    pauseOnDotsHover:true,
+});
+$(".slider-banner").addClass('show-block fadeIn');
+
+setTimeout(() => {
+    $(".slider-banner__text-content").addClass('show-block fadeIn');
+}, 1000);
+//!-------------------------------------------------------------------
