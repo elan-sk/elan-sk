@@ -36,3 +36,4 @@ setTimeout(() => {
     $(".slider-banner__text-content").addClass('show-block fadeIn');
 }, 1000);
 //!-------------------------------------------------------------------
+ 
