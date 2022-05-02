@@ -80,17 +80,31 @@ a,
 .link {
   color: #da5120;
   font-family: "Anton", serif;
-  font-size: 50px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.3;
   text-align: center;
   margin-top: 5%;
 }
+@media only screen and (min-width: 992px) {
+  .h2-b,
+  .h2-c,
+  h2,
+  a,
+  .link {
+    font-size: 50px;
+  }
+}
 .h2-b {
   color: #feac01;
-  font-size: 48px;
+  font-size: 24px;
   text-align: right;
+}
+@media only screen and (min-width: 992px) {
+  .h2-b {
+    font-size: 48px;
+  }
 }
 .h2-c {
   color: #da5120;
@@ -104,13 +118,28 @@ h3,
 .footer__bonar-text {
   color: #feac01;
   font-family: "Anton", serif;
-  font-size: 28px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.3;
 }
+@media only screen and (min-width: 992px) {
+  .h3-b,
+  .h3-c,
+  .h3-d,
+  .h4,
+  h3,
+  .footer__bonar-text {
+    font-size: 28px;
+  }
+}
 .h3-b {
   color: #fe7f00;
-  font-size: 34px;
+  font-size: 12px;
+}
+@media only screen and (min-width: 992px) {
+  .h3-b {
+    font-size: 34px;
+  }
 }
 .h3-c {
   color: #fcfcfc;
@@ -160,11 +189,24 @@ p,
 ul,
 ol,
 div {
-  font-size: 1rem;
+  font-size: 0.75rem;
   font-weight: normal;
 }
+@media only screen and (min-width: 992px) {
+  p,
+  ul,
+  ol,
+  div {
+    font-size: 1rem;
+  }
+}
 .site-form__label {
-  font-size: 0.875rem;
+  font-size: 0.625rem;
+}
+@media only screen and (min-width: 992px) {
+  .site-form__label {
+    font-size: 0.875rem;
+  }
 }
 .button-primary,
 .site-form__submit input,
@@ -172,8 +214,18 @@ div {
 .button-secondary,
 .button-tertiary,
 .button-cuarto {
-  font-size: 1rem;
+  font-size: 0.75rem;
   font-weight: bold;
+}
+@media only screen and (min-width: 992px) {
+  .button-primary,
+  .site-form__submit input,
+  .site-form__submit button,
+  .button-secondary,
+  .button-tertiary,
+  .button-cuarto {
+    font-size: 1rem;
+  }
 }
 strong,
 b {
@@ -428,6 +480,36 @@ h3 {
 .cotacto-container__l img {
   width: 21.875rem;
   height: 21.875rem;
+}
+.donate-container {
+  display: flex;
+}
+.donate-container__piggy-icon {
+  display: block;
+  background-image: url("/WPG/img/icon/icon-donate.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-size: 0;
+  height: 28.125rem;
+  text-indent: -999999px;
+  overflow: hidden;
+  width: 28.125rem;
+}
+.donate-container__option {
+  flex-direction: column;
+  margin-left: 10%;
+}
+.donate-container__style {
+  padding: 2rem;
+  border-radius: 2rem;
+  box-sizing: border-box;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px #fff,
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  margin-top: 3rem;
+}
+.donate-container__style__:hover {
+  filter: invert(100%);
 }
 .button-primary,
 .site-form__submit input,
