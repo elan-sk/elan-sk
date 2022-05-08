@@ -121,9 +121,10 @@ h3,
 .footer__bonar-text {
   color: #feac01;
   font-family: "Anton", serif;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 1.3;
+  margin: 0.625rem 0;
 }
 @media only screen and (min-width: 992px) {
   .h3-b,
@@ -137,7 +138,7 @@ h3,
 .h3-b,
 .management-tabs__nav-link .management-tabs__name {
   color: #fe7f00;
-  font-size: 20px;
+  font-size: 25px;
 }
 @media only screen and (min-width: 992px) {
   .h3-b,
@@ -148,6 +149,12 @@ h3,
 .h3-c {
   color: #fcfcfc;
   text-align: center;
+  font-size: 25px;
+}
+@media only screen and (min-width: 992px) {
+  .h3-c {
+    font-size: 34px;
+  }
 }
 p,
 ul,
@@ -191,7 +198,7 @@ p,
 ul,
 ol,
 div {
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: normal;
 }
 @media only screen and (min-width: 992px) {
@@ -199,7 +206,7 @@ div {
   ul,
   ol,
   div {
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
 }
 .site-form__label,
@@ -363,8 +370,14 @@ a:hover {
   justify-content: center;
 }
 .program-star__loguer img {
-  width: auto;
-  height: 315px;
+  height: auto;
+  width: 100%;
+}
+@media only screen and (min-width: 576px) {
+  .program-star__loguer img {
+    height: 315px;
+    width: auto;
+  }
 }
 .program-star__support {
   background-color: #19a1ff;
@@ -419,7 +432,7 @@ a:hover {
   bottom: 20px;
   right: 10px;
   gap: 5px;
-  z-index: 2000;
+  z-index: 50;
 }
 .Equipo__voluntering-l img {
   background-color: transparent;
@@ -448,9 +461,6 @@ a:hover {
   text-align: center;
   margin-top: 5%;
 }
-.h3-d {
-  color: #fcfcfc;
-}
 .space {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -463,6 +473,12 @@ a:hover {
 }
 .flex-container__container {
   margin-top: 5%;
+  gap: 0.9375rem;
+}
+@media only screen and (min-width: 992px) {
+  .flex-container__container {
+    gap: 0;
+  }
 }
 .flex-container__color {
   background-color: #e6e6e5;
@@ -971,6 +987,7 @@ h3 {
   padding: 0.625rem 1.875rem 0;
   position: sticky;
   height: auto;
+  z-index: 100;
 }
 .main-menu__logo {
   display: block;
@@ -1219,6 +1236,9 @@ h3 {
   .management-tabs__description {
     margin: 2.8125rem auto;
   }
+}
+.management-tabs__years {
+  padding: 0 32px;
 }
 .management-tabs__year {
   display: block;
