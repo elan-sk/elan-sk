@@ -368,7 +368,7 @@ const btnSalir = document.getElementById('btnSalir');
             btnIngresar.addEventListener('click', function () {
                 if(inputAlias.value.trim()){
                     let nuevoUsuario = new Usuario (inputAlias.value.trim());
-                    let examen = new Examen ('Comidas del mundo', nuevoUsuario, preguntasCreadas);
+                    let examen = new Examen ('Colfondos', nuevoUsuario, preguntasCreadas);
 
                     const {tematica, usuario, preguntas} = examen;
 
